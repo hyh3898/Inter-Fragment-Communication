@@ -52,7 +52,11 @@ public class DrawableFragment extends Fragment {
         getDrawables();
         imgRateMe = (ImageView) v.findViewById(R.id.imgRateMe);
         rating = (RatingBar) v.findViewById(R.id.ratingBar);
+
+        // Create an 2d array to store the relevant picture and its rating
         imageRatingCombine = new int[100][20];
+
+        // Initiate the picture of index 0;
         imgRateMe.setImageDrawable(drawables.get(0));
 //        btnRight = (Button) v.findViewById(R.id.btnRight);
 //        btnLeft = (Button) v.findViewById(R.id.btnLeft);
